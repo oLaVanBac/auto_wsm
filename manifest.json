@@ -1,15 +1,14 @@
 {
-  "name": "__MSG_name__",
-  "version": "0.0.1",
+  "name": "Auto WSM",
+  "version": "1.0.2",
   "manifest_version": 2,
-  "description": "__MSG_desc__",
+  "description": "I don't want to answer \"Do you know 7 core values?\"",
   "homepage_url": "https://github.com/baclv",
   "icons": {
-    "16": "icons/icon16.png",
-    "48": "icons/icon48.png",
-    "128": "icons/icon128.png"
+    "16": "icons/16.png",
+    "48": "icons/48.png",
+    "128": "icons/128.png"
   },
-  "default_locale": "en",
   "content_scripts": [
     {
       "matches": [
@@ -17,10 +16,13 @@
         "https://wsm.framgia.vn/*"
       ],
       "js": [
-        "js/contentscript.js"
+        "js/script.js"
       ],
       "run_at": "document_end"
     }
   ],
-  "web_accessible_resources": ["js/inject.js"]
+  "web_accessible_resources": [
+    "js/inject.js",
+    "css/main.css"
+  ]
 }

@@ -1,0 +1,28 @@
+.recaptcha {
+  width: 24px;
+  height: 24px;
+}
+
+.recaptcha-processing {
+  position: relative;
+  border-radius: 12px;
+  border-left: 2px solid #07313A;
+  border-top: 2px solid #07313A;
+  animation: arrow-circle infinite .5s linear;
+}
+
+@keyframes arrow-circle {
+  0% {
+    transform: rotate(360deg);
+  }
+
+  100% {
+    transform: rotate(0);
+  }
+}
+
+.forgot-password {
+  text-align: unset;
+  display: flex;
+  justify-content: space-between;
+}
