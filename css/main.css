@@ -4,7 +4,6 @@
 }
 
 .recaptcha-processing {
-  position: relative;
   border-radius: 12px;
   border-left: 2px solid #07313A;
   border-top: 2px solid #07313A;
